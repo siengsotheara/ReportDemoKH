@@ -38,7 +38,36 @@ namespace ReportDemo
             crxReport.ParameterFields.GetItemByName("@COMPANY_ADDRESS", Missing.Value).AddCurrentValue("ផ្ទះលេខ១៨ ផ្លូវលេខ ៦១៨​​ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ");
             crxReport.ParameterFields.GetItemByName("@LOGIN_NAME", Missing.Value).AddCurrentValue("admin");
             crxReport.ParameterFields.GetItemByName("@DATA_MONTH", Missing.Value).AddCurrentValue(dt);
+            crxReport.ParameterFields.GetItemByName("@CUSTOMER_GROUP_NAME", Missing.Value).AddCurrentValue(cboCustomerType.Text);
+            crxReport.ParameterFields.GetItemByName("@CUSTOMER_CONNECTION_TYPE_NAME", Missing.Value).AddCurrentValue(cboConnectionType.Text);
+            crxReport.ParameterFields.GetItemByName("@FILTER_POWER", Missing.Value).AddCurrentValue(cboPowerType.Text);
+            crxReport.ParameterFields.GetItemByName("@CURRENCY_NAME", Missing.Value).AddCurrentValue(cboCurrency.Text);
 
+            crxReport.ParameterFields.GetItemByName("@CUSTOMER_GROUP_ID", Missing.Value).AddCurrentValue(Convert.ToInt32(cboCustomerType.SelectedValue));
+            crxReport.ParameterFields.GetItemByName("@CUSTOMER_CONNECTION_TYPE_ID", Missing.Value).AddCurrentValue(Convert.ToInt32(cboConnectionType.SelectedValue));
+            crxReport.ParameterFields.GetItemByName("@CURRENCY_ID", Missing.Value).AddCurrentValue(Convert.ToInt32(cboCurrency.SelectedValue));
+            if (cboPowerType.SelectedIndex == 0)
+            {
+
+                crxReport.ParameterFields.GetItemByName("@V1", Missing.Value).AddCurrentValue(0);
+                crxReport.ParameterFields.GetItemByName("@V2", Missing.Value).AddCurrentValue(1000000);
+            }
+            else if (cboPowerType.SelectedIndex == 1)
+            {
+              //  MessageBox.Show("");
+                crxReport.ParameterFields.GetItemByName("@V1", Missing.Value).AddCurrentValue(0);
+                crxReport.ParameterFields.GetItemByName("@V2", Missing.Value).AddCurrentValue(10);
+            }
+            else if (cboPowerType.SelectedIndex == 2)
+            {
+                crxReport.ParameterFields.GetItemByName("@V1", Missing.Value).AddCurrentValue(1);
+                crxReport.ParameterFields.GetItemByName("@V2", Missing.Value).AddCurrentValue(10);
+            }
+            else if (cboPowerType.SelectedIndex == 3)
+            {
+                crxReport.ParameterFields.GetItemByName("@V1", Missing.Value).AddCurrentValue(10);
+                crxReport.ParameterFields.GetItemByName("@V2", Missing.Value).AddCurrentValue(1000000);
+            }
             crxReport.PaperOrientation = CRAXDDRT.CRPaperOrientation.crPortrait;
             crxReport.PaperSize = CRAXDDRT.CRPaperSize.crPaperA4;
             axCrystalActiveXReportViewer1.ReportSource = crxReport;
@@ -60,13 +89,13 @@ namespace ReportDemo
             cboConnectionType.DisplayMember = "CUSTOMER_CONNECTION_TYPE_NAME";
 
             cboCustomerType.DataSource = g.ShowAllGroupToComboBox();
-            cboCustomerType.ValueMember = "CUSTOMER_CONNECTION_TYPE_ID";
-            cboCustomerType.DisplayMember = "CUSTOMER_CONNECTION_TYPE_NAME";
+            cboCustomerType.ValueMember = "CUSTOMER_GROUP_ID";
+            cboCustomerType.DisplayMember = "CUSTOMER_GROUP_NAME";
 
             cboConnectionType.SelectedIndex = 0;
             cboCurrency.SelectedIndex = 0;
             cboCustomerType.SelectedIndex = 0;
-           // cboPowerType.SelectedIndex = 0;
+            cboPowerType.SelectedIndex = 0;
         }
     }
 }

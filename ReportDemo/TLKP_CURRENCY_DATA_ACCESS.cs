@@ -18,7 +18,6 @@ namespace ReportDemo
         {
             _context = new DBDataContext();
             var result = from s in _context.TLKP_CURRENCies
-                         where s.IS_DEFAULT_CURRENCY == true
                          select s;
             DataTable dt = new DataTable();
             dt.Columns.Add("CURRENCY_ID");

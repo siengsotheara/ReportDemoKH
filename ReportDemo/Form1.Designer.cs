@@ -82,12 +82,6 @@
             // 
             this.cboConnectionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboConnectionType.FormattingEnabled = true;
-            this.cboConnectionType.Items.AddRange(new object[] {
-            "គ្រប់ប្រភេទភ្ជាប់ចរន្ត",
-            "អតិថិជនធម្មតា",
-            "ទិញពី MV ត្រង់ស្វូអ្នកលក់",
-            "ទិញពី MV ត្រង់ស្វូអ្នកទិញ",
-            "ទិញ MV"});
             this.cboConnectionType.Location = new System.Drawing.Point(345, 12);
             this.cboConnectionType.Name = "cboConnectionType";
             this.cboConnectionType.Size = new System.Drawing.Size(143, 27);

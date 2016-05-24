@@ -16,19 +16,19 @@ C:\Users\Sieng Sotheara\Documents\Visual Studio 2013\Projects\ReportDemo\ReportD
 C:\Users\Sieng Sotheara\Documents\Visual Studio 2013\Projects\ReportDemo\ReportDemo\obj\Demo\ReportDemo.exe
 C:\Users\Sieng Sotheara\Documents\Visual Studio 2013\Projects\ReportDemo\ReportDemo\obj\Demo\ReportDemo.pdb
 D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.exe.config
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\Interop.CRAXDDRT.dll
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\Interop.CrystalActiveXReportViewerLib105.dll
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\AxInterop.CrystalActiveXReportViewerLib105.dll
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.ResolveComReference.cache
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.exe
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.pdb
 D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.exe
 D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.pdb
 D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Demo\Interop.CrystalActiveXReportViewerLib105.dll
 D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Demo\AxInterop.CrystalActiveXReportViewerLib105.dll
-D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csprojResolveAssemblyReference.cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\Interop.CRAXDDRT.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\Interop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.ResolveComReference.cache
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form1.resources
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form2.resources
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form3.resources
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Properties.Resources.resources
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.GenerateResource.Cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.exe
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.pdb
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csprojResolveAssemblyReference.cache
