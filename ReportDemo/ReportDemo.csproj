@@ -80,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TLKP_CURRENCY_DATA_ACCESS.cs" />
+    <Compile Include="TLKP_CUSTOMER_CON_TYPE_DATA_ACCESS.cs" />
+    <Compile Include="TLKP_CUSTOMER_GROUP_DATA_ACCESS.cs" />
     <None Include="DB.dbml.layout">
       <DependentUpon>DB.dbml</DependentUpon>
     </None>
@@ -100,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DB.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

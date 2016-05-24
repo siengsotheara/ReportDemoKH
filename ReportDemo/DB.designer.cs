@@ -33,9 +33,9 @@ namespace ReportDemo
     partial void InsertTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void UpdateTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void DeleteTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
-    partial void InsertTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
-    partial void UpdateTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
-    partial void DeleteTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
+    partial void InsertTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
+    partial void UpdateTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
+    partial void DeleteTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
     partial void InsertTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
     partial void UpdateTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
     partial void DeleteTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
@@ -82,11 +82,11 @@ namespace ReportDemo
 			}
 		}
 		
-		public System.Data.Linq.Table<TLKP_CUSTOMER_CONNECTION_TYPE> TLKP_CUSTOMER_CONNECTION_TYPEs
+		public System.Data.Linq.Table<TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS> TLKP_CUSTOMER_CONNECTION_TYPEs
 		{
 			get
 			{
-				return this.GetTable<TLKP_CUSTOMER_CONNECTION_TYPE>();
+				return this.GetTable<TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS>();
 			}
 		}
 		
@@ -314,7 +314,7 @@ namespace ReportDemo
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TLKP_CUSTOMER_CONNECTION_TYPE")]
-	public partial class TLKP_CUSTOMER_CONNECTION_TYPE : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -349,7 +349,7 @@ namespace ReportDemo
     partial void OnNONLICENSE_CUSTOMER_GROUP_IDChanged();
     #endregion
 		
-		public TLKP_CUSTOMER_CONNECTION_TYPE()
+		public TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS()
 		{
 			OnCreated();
 		}

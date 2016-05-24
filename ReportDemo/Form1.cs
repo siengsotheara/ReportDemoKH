@@ -47,10 +47,26 @@ namespace ReportDemo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            TLKP_CURRENCY_DATA_ACCESS cda = new TLKP_CURRENCY_DATA_ACCESS();
+            TLKP_CUSTOMER_CON_TYPE_DATA_ACCESS c = new TLKP_CUSTOMER_CON_TYPE_DATA_ACCESS();
+            TLKP_CUSTOMER_GROUP_DATA_ACCESS g = new TLKP_CUSTOMER_GROUP_DATA_ACCESS();
+            cboCurrency.DataSource = cda.ShowAllCurrencyToComboBox();
+            cboCurrency.ValueMember = "CURRENCY_ID";
+            cboCurrency.DisplayMember = "CURRENCY_NAME";
+
+            cboConnectionType.DataSource = c.ShowAllConnectionTypeToComboBox();
+            cboConnectionType.ValueMember = "CUSTOMER_CONNECTION_TYPE_ID";
+            cboConnectionType.DisplayMember = "CUSTOMER_CONNECTION_TYPE_NAME";
+
+            cboCustomerType.DataSource = g.ShowAllGroupToComboBox();
+            cboCustomerType.ValueMember = "CUSTOMER_CONNECTION_TYPE_ID";
+            cboCustomerType.DisplayMember = "CUSTOMER_CONNECTION_TYPE_NAME";
+
             cboConnectionType.SelectedIndex = 0;
             cboCurrency.SelectedIndex = 0;
             cboCustomerType.SelectedIndex = 0;
-            cboPowerType.SelectedIndex = 0;
+           // cboPowerType.SelectedIndex = 0;
         }
     }
 }

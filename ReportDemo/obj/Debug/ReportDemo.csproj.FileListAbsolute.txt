@@ -15,3 +15,20 @@ c:\users\sieng sotheara\documents\visual studio 2013\Projects\ReportDemo\ReportD
 c:\users\sieng sotheara\documents\visual studio 2013\Projects\ReportDemo\ReportDemo\obj\Debug\ReportDemo.pdb
 C:\Users\Sieng Sotheara\Documents\Visual Studio 2013\Projects\ReportDemo\ReportDemo\obj\Debug\ReportDemo.Form2.resources
 C:\Users\Sieng Sotheara\Documents\Visual Studio 2013\Projects\ReportDemo\ReportDemo\obj\Debug\ReportDemo.Form3.resources
+D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Debug\ReportDemo.exe.config
+D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Debug\ReportDemo.exe
+D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Debug\ReportDemo.pdb
+D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.csprojResolveAssemblyReference.cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\Interop.CRAXDDRT.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.csproj.ResolveComReference.cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.Form1.resources
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.Form2.resources
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.Form3.resources
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.Properties.Resources.resources
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.csproj.GenerateResource.Cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.exe
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Debug\ReportDemo.pdb
