@@ -119,10 +119,10 @@
             // 
             this.axCrystalActiveXReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.axCrystalActiveXReportViewer1.Enabled = true;
-            this.axCrystalActiveXReportViewer1.Location = new System.Drawing.Point(0, 57);
+            this.axCrystalActiveXReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.axCrystalActiveXReportViewer1.Name = "axCrystalActiveXReportViewer1";
             this.axCrystalActiveXReportViewer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axCrystalActiveXReportViewer1.OcxState")));
-            this.axCrystalActiveXReportViewer1.Size = new System.Drawing.Size(1296, 463);
+            this.axCrystalActiveXReportViewer1.Size = new System.Drawing.Size(1296, 520);
             this.axCrystalActiveXReportViewer1.TabIndex = 1;
             // 
             // Form1
@@ -130,8 +130,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1296, 520);
-            this.Controls.Add(this.axCrystalActiveXReportViewer1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.axCrystalActiveXReportViewer1);
             this.Font = new System.Drawing.Font("Khmer OS System", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
