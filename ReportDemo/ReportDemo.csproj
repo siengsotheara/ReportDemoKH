@@ -42,6 +42,10 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Demo\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -78,8 +82,15 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReportOPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportOPS.Designer.cs">
+      <DependentUpon>FormReportOPS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TBL_COMPANY_DATA_ACCESS.cs" />
     <Compile Include="TLKP_CURRENCY_DATA_ACCESS.cs" />
     <Compile Include="TLKP_CUSTOMER_CON_TYPE_DATA_ACCESS.cs" />
     <Compile Include="TLKP_CUSTOMER_GROUP_DATA_ACCESS.cs" />
@@ -94,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportOPS.resx">
+      <DependentUpon>FormReportOPS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

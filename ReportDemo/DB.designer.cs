@@ -33,15 +33,18 @@ namespace ReportDemo
     partial void InsertTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void UpdateTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void DeleteTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
-    partial void InsertTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
-    partial void UpdateTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
-    partial void DeleteTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS instance);
+    partial void InsertTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
+    partial void UpdateTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
+    partial void DeleteTLKP_CUSTOMER_CONNECTION_TYPE(TLKP_CUSTOMER_CONNECTION_TYPE instance);
     partial void InsertTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
     partial void UpdateTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
     partial void DeleteTLKP_CUSTOMER_GROUP(TLKP_CUSTOMER_GROUP instance);
     partial void InsertTLKP_CURRENCY(TLKP_CURRENCY instance);
     partial void UpdateTLKP_CURRENCY(TLKP_CURRENCY instance);
     partial void DeleteTLKP_CURRENCY(TLKP_CURRENCY instance);
+    partial void InsertTBL_COMPANY(TBL_COMPANY instance);
+    partial void UpdateTBL_COMPANY(TBL_COMPANY instance);
+    partial void DeleteTBL_COMPANY(TBL_COMPANY instance);
     #endregion
 		
 		public DBDataContext() : 
@@ -82,11 +85,11 @@ namespace ReportDemo
 			}
 		}
 		
-		public System.Data.Linq.Table<TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS> TLKP_CUSTOMER_CONNECTION_TYPEs
+		public System.Data.Linq.Table<TLKP_CUSTOMER_CONNECTION_TYPE> TLKP_CUSTOMER_CONNECTION_TYPEs
 		{
 			get
 			{
-				return this.GetTable<TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS>();
+				return this.GetTable<TLKP_CUSTOMER_CONNECTION_TYPE>();
 			}
 		}
 		
@@ -103,6 +106,14 @@ namespace ReportDemo
 			get
 			{
 				return this.GetTable<TLKP_CURRENCY>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TBL_COMPANY> TBL_COMPANies
+		{
+			get
+			{
+				return this.GetTable<TBL_COMPANY>();
 			}
 		}
 	}
@@ -314,7 +325,7 @@ namespace ReportDemo
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TLKP_CUSTOMER_CONNECTION_TYPE")]
-	public partial class TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TLKP_CUSTOMER_CONNECTION_TYPE : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -349,7 +360,7 @@ namespace ReportDemo
     partial void OnNONLICENSE_CUSTOMER_GROUP_IDChanged();
     #endregion
 		
-		public TLKP_CUSTOMER_CONNECTION_TYPE_DATA_ACCESS()
+		public TLKP_CUSTOMER_CONNECTION_TYPE()
 		{
 			OnCreated();
 		}
@@ -762,6 +773,284 @@ namespace ReportDemo
 					this._CURRENCY_CODE = value;
 					this.SendPropertyChanged("CURRENCY_CODE");
 					this.OnCURRENCY_CODEChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_COMPANY")]
+	public partial class TBL_COMPANY : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _COMPANY_ID;
+		
+		private string _COMPANY_NAME;
+		
+		private string _ADDRESS;
+		
+		private string _VILLAGE_CODE;
+		
+		private string _LICENSE_NAME_KH;
+		
+		private System.Data.Linq.Binary _COMPANY_LOGO;
+		
+		private string _LICENSE_NUMBER;
+		
+		private string _LICENSE_NAME;
+		
+		private string _COMPANY_NAME_EN;
+		
+		private string _LICENSE_TYPE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnCOMPANY_IDChanging(int value);
+    partial void OnCOMPANY_IDChanged();
+    partial void OnCOMPANY_NAMEChanging(string value);
+    partial void OnCOMPANY_NAMEChanged();
+    partial void OnADDRESSChanging(string value);
+    partial void OnADDRESSChanged();
+    partial void OnVILLAGE_CODEChanging(string value);
+    partial void OnVILLAGE_CODEChanged();
+    partial void OnLICENSE_NAME_KHChanging(string value);
+    partial void OnLICENSE_NAME_KHChanged();
+    partial void OnCOMPANY_LOGOChanging(System.Data.Linq.Binary value);
+    partial void OnCOMPANY_LOGOChanged();
+    partial void OnLICENSE_NUMBERChanging(string value);
+    partial void OnLICENSE_NUMBERChanged();
+    partial void OnLICENSE_NAMEChanging(string value);
+    partial void OnLICENSE_NAMEChanged();
+    partial void OnCOMPANY_NAME_ENChanging(string value);
+    partial void OnCOMPANY_NAME_ENChanged();
+    partial void OnLICENSE_TYPEChanging(string value);
+    partial void OnLICENSE_TYPEChanged();
+    #endregion
+		
+		public TBL_COMPANY()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMPANY_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int COMPANY_ID
+		{
+			get
+			{
+				return this._COMPANY_ID;
+			}
+			set
+			{
+				if ((this._COMPANY_ID != value))
+				{
+					this.OnCOMPANY_IDChanging(value);
+					this.SendPropertyChanging();
+					this._COMPANY_ID = value;
+					this.SendPropertyChanged("COMPANY_ID");
+					this.OnCOMPANY_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMPANY_NAME", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string COMPANY_NAME
+		{
+			get
+			{
+				return this._COMPANY_NAME;
+			}
+			set
+			{
+				if ((this._COMPANY_NAME != value))
+				{
+					this.OnCOMPANY_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._COMPANY_NAME = value;
+					this.SendPropertyChanged("COMPANY_NAME");
+					this.OnCOMPANY_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string ADDRESS
+		{
+			get
+			{
+				return this._ADDRESS;
+			}
+			set
+			{
+				if ((this._ADDRESS != value))
+				{
+					this.OnADDRESSChanging(value);
+					this.SendPropertyChanging();
+					this._ADDRESS = value;
+					this.SendPropertyChanged("ADDRESS");
+					this.OnADDRESSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VILLAGE_CODE", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string VILLAGE_CODE
+		{
+			get
+			{
+				return this._VILLAGE_CODE;
+			}
+			set
+			{
+				if ((this._VILLAGE_CODE != value))
+				{
+					this.OnVILLAGE_CODEChanging(value);
+					this.SendPropertyChanging();
+					this._VILLAGE_CODE = value;
+					this.SendPropertyChanged("VILLAGE_CODE");
+					this.OnVILLAGE_CODEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NAME_KH", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string LICENSE_NAME_KH
+		{
+			get
+			{
+				return this._LICENSE_NAME_KH;
+			}
+			set
+			{
+				if ((this._LICENSE_NAME_KH != value))
+				{
+					this.OnLICENSE_NAME_KHChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_NAME_KH = value;
+					this.SendPropertyChanged("LICENSE_NAME_KH");
+					this.OnLICENSE_NAME_KHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMPANY_LOGO", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary COMPANY_LOGO
+		{
+			get
+			{
+				return this._COMPANY_LOGO;
+			}
+			set
+			{
+				if ((this._COMPANY_LOGO != value))
+				{
+					this.OnCOMPANY_LOGOChanging(value);
+					this.SendPropertyChanging();
+					this._COMPANY_LOGO = value;
+					this.SendPropertyChanged("COMPANY_LOGO");
+					this.OnCOMPANY_LOGOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NUMBER", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string LICENSE_NUMBER
+		{
+			get
+			{
+				return this._LICENSE_NUMBER;
+			}
+			set
+			{
+				if ((this._LICENSE_NUMBER != value))
+				{
+					this.OnLICENSE_NUMBERChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_NUMBER = value;
+					this.SendPropertyChanged("LICENSE_NUMBER");
+					this.OnLICENSE_NUMBERChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NAME", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string LICENSE_NAME
+		{
+			get
+			{
+				return this._LICENSE_NAME;
+			}
+			set
+			{
+				if ((this._LICENSE_NAME != value))
+				{
+					this.OnLICENSE_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_NAME = value;
+					this.SendPropertyChanged("LICENSE_NAME");
+					this.OnLICENSE_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMPANY_NAME_EN", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string COMPANY_NAME_EN
+		{
+			get
+			{
+				return this._COMPANY_NAME_EN;
+			}
+			set
+			{
+				if ((this._COMPANY_NAME_EN != value))
+				{
+					this.OnCOMPANY_NAME_ENChanging(value);
+					this.SendPropertyChanging();
+					this._COMPANY_NAME_EN = value;
+					this.SendPropertyChanged("COMPANY_NAME_EN");
+					this.OnCOMPANY_NAME_ENChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_TYPE", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string LICENSE_TYPE
+		{
+			get
+			{
+				return this._LICENSE_TYPE;
+			}
+			set
+			{
+				if ((this._LICENSE_TYPE != value))
+				{
+					this.OnLICENSE_TYPEChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_TYPE = value;
+					this.SendPropertyChanged("LICENSE_TYPE");
+					this.OnLICENSE_TYPEChanged();
 				}
 			}
 		}

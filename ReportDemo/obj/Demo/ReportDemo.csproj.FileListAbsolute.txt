@@ -32,3 +32,4 @@ D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.GenerateResourc
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.exe
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.pdb
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csprojResolveAssemblyReference.cache
+D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.FormReportOPS.resources
