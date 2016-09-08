@@ -33,3 +33,21 @@ D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.exe
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.pdb
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csprojResolveAssemblyReference.cache
 D:\EPower CCL\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.FormReportOPS.resources
+D:\E-Power\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.exe.config
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\Interop.CRAXDDRT.dll
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\Interop.CrystalActiveXReportViewerLib105.dll
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.ResolveComReference.cache
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.exe
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.pdb
+D:\E-Power\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.exe
+D:\E-Power\ReportDemoKH\ReportDemo\bin\Demo\ReportDemo.pdb
+D:\E-Power\ReportDemoKH\ReportDemo\bin\Demo\Interop.CrystalActiveXReportViewerLib105.dll
+D:\E-Power\ReportDemoKH\ReportDemo\bin\Demo\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csprojResolveAssemblyReference.cache
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form1.resources
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form2.resources
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Form3.resources
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.FormReportOPS.resources
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.Properties.Resources.resources
+D:\E-Power\ReportDemoKH\ReportDemo\obj\Demo\ReportDemo.csproj.GenerateResource.Cache
